@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maheswari's Portfolio</title>
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f4f4f4, #e0eafc);
+      color: #333;
+    }
+
+    nav {
+      background: #1f1f2e;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    nav a i {
+      margin-right: 0.5rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #f8fafc;
+    }
+
+    .name-box {
+      display: inline-block;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: #4e54c8;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #2a4a83;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2a4a83;
+      margin-bottom: 2rem;
+    }
+
+    .skills, .projects, .education, .internships {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .skill, .project, .edu-item, .internship-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      transition: transform 0.3s;
+    }
+
+    .skill:hover, .project:hover, .edu-item:hover, .internship-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #1f1f2e;
+    }
+
+    .contact {
+      text-align: center;
+      background: #2a4a83;
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .contact a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1f1f2e;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .skills, .projects, .education, .internships {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>Portfolio</strong></div>
+    <div>
+      <a href="#about"><i class="fas fa-user"></i>About</a>
+      <a href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
+      <a href="#internships"><i class="fas fa-briefcase"></i>Internships</a>
+      <a href="#skills"><i class="fas fa-code"></i>Skills</a>
+      <a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
+      <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="name-box">
+      <h1>Menuga Sai Maheswari</h1>
+    </div>
+    <p>B.Tech in AI & Data Science | Web Developer | Data Science Enthusiast</p>
+    <div class="social-links">
+      <a href="https://github.com/SAIMAHESWARIM" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/your-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      Hello! I'm Maheswari, a passionate developer and data science enthusiast currently pursuing B.Tech in Artificial Intelligence and Data Science at Vishnu Institute of Technology. I love building web apps and exploring cloud data platforms like AWS and Snowflake.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="education">
+      <div class="edu-item">
+        <h3>B.Tech in AI & Data Science</h3>
+        <p>Vishnu Institute of Technology, 2021–2025<br/>CGPA: 8.76</p>
+      </div>
+      <div class="edu-item">
+        <h3>Intermediate (M.P.C)</h3>
+        <p>Sri Sadhna Junior College, Markapur</p>
+      </div>
+      <div class="edu-item">
+        <h3>SSC</h3>
+        <p>Bhashyam School, Markapur</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="internships">
+    <h2><i class="fas fa-briefcase"></i> Internships</h2>
+    <div class="internships">
+      <div class="internship-item">
+        <h3>AWS Academy – Data Analytics</h3>
+        <p>Sep 2023 – Nov 2023 (Virtual)</p>
+      </div>
+      <div class="internship-item">
+        <h3>Blue Prism – Intelligent Automation</h3>
+        <p>Virtual Internship</p>
+      </div>
+      <div class="internship-item">
+        <h3>Oasis Infobyte & Bharat Intern</h3>
+        <p>Web Development Internships</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2><i class="fas fa-code"></i> Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Node.js & Express</div>
+      <div class="skill">Firebase</div>
+      <div class="skill">JAVA</div>
+      <div class="skill">Python</div>
+      <div class="skill">AWS Redshift</div>
+      <div class="skill">Snowflake</div>
+      <div class="skill">OpenCV & Flask</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <a href="#">
+          <h3>Yoga Website</h3>
+          <p>Full-stack platform for yoga class booking and video guides. Built using Node.js, Express, Firebase.</p>
+        </a>
+      </div>
+      <div class="project">
+        <a href="#">
+          <h3>Travel Blog</h3>
+          <p>A virtual travel blog sharing places and tips using HTML, CSS, APIs, and Firebase.</p>
+        </a>
+      </div>
+      <div class="project">
+        <a href="#">
+          <h3>Cartoonizer App</h3>
+          <p>Image-to-cartoon app using K-Means Clustering, OpenCV, Flask, and Python.</p>
+        </a>
+      </div>
+      <div class="project">
+        <a href="#">
+          <h3>Snowflake & Redshift Integration</h3>
+          <p>Real-time Snowpipe pipeline for data transfer between Amazon Redshift and Snowflake.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+    <p>Email: smaheswari837@gmail.com</p>
+    <p>Phone: 8074788662</p>
+   
+  </section>
+
+  <footer>
+    © 2025 Maheswari. All rights reserved.
+    <div>
+      <a href="https://github.com/SAIMAHESWARIM" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/menuga-sai-maheswari-197424240/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
